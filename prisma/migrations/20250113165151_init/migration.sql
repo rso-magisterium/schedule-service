@@ -1,5 +1,5 @@
 -- CreateEnum
-CREATE TYPE "Repeat" AS ENUM ('DAILY', 'WEEKLY', 'MONTHLY', 'YEARLY');
+CREATE TYPE "Repeat" AS ENUM ('NONE', 'DAILY', 'WEEKLY', 'MONTHLY', 'YEARLY');
 
 -- CreateTable
 CREATE TABLE "ScheduleEntry" (
