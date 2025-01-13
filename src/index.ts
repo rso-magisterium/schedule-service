@@ -89,7 +89,7 @@ grpcServer.bindAsync(
       process.exit(101);
     }
 
-    logger.info(`gRPC server is running at localhost:${port}`);
+    logger.info(`gRPC server is running at 0.0.0.0:${port}`);
   }
 );
 

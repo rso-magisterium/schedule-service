@@ -2,8 +2,8 @@ import * as grpc from "@grpc/grpc-js";
 import * as protoLoader from "@grpc/proto-loader";
 import prisma from "../prisma";
 
-import { ProtoGrpcType } from "./generated/schedule";
-import { ScheduleServiceHandlers } from "./generated/ScheduleService";
+import { ProtoGrpcType } from "./generated/schedule/schedule";
+import { ScheduleServiceHandlers } from "./generated/schedule/ScheduleService";
 import { PrismaClientKnownRequestError, PrismaClientValidationError } from "@prisma/client/runtime/library";
 import logger from "../logger";
 
