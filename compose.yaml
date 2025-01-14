@@ -11,6 +11,8 @@ services:
       DATABASE_URL: postgresql://schedule-svc:verysecretpassword@db/schedule-service?schema=public
       USER_SERVICE_URL: http://host.docker.internal:3000
       CLASSROOM_SERVICE_URL_GRPC: host.docker.internal:3010
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     env_file:
       - .env
     depends_on:
