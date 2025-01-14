@@ -1,6 +1,6 @@
 {
 	"name": "schedule-service",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "",
 	"scripts": {
 		"build": "npm run gen:proto && npx tsc",
