@@ -80,8 +80,9 @@ app.use(
   swaggerUi.setup(undefined, undefined, undefined, undefined, undefined, "/api/openapi.json")
 );
 
+let grpcServerBind: string = process.env.PORT_GRPC ? `0.0.0.0:${process.env.PORT_GRPC}` : "0.0.0.0:3011";
 grpcServer.bindAsync(
-  `0.0.0.0:${process.env.PORT_GRPC}` || "0.0.0.0:3011",
+  grpcServerBind,
   grpc.ServerCredentials.createInsecure(),
   (err, port) => {
     if (err) {
